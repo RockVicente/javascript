@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript exercicio</title>
+    <script src="msg.js">
+        function mensagemParabens(){
+        }
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(45, 44, 44);
+            /*background-image: linear-gradient(to right, rgba(67, 143, 80, 0.626), transparent);*/
+        }
+
+        label {
+            text-align: center;
+            display: block;
+            margin-top: 200px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        input {
+            background-color: rgb(67, 143, 80);
+            display: block;
+            margin: auto;
+            padding: 8px 20px;
+            margin-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 3px 3px 8px 0px black;
+
+        }
+
+        p{
+            color: chocolate;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 5px;
+            list-style-type: '\2728';
+        }
+    </style>
+</head>
+
+<body>
+    <form action="msg.js">
+        <label for="congrats">Clique no botao abaixo</label>
+        <input type="button" value="Clique aqui!" onclick="mensagemParabens()">
+        <p id="msg"></p>
+    </form>
+</body>
+
+</html>
+
+

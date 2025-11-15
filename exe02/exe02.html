@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa javascript</title>
+    <style>/*Estilo da pagina*/
+        body{
+            background-color: rgba(105, 105, 173, 0.823);
+            color: white;
+        }
+
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de Dados</h1> <!--tema da aula 2-->
+    <p>Ola! Mundo</p>
+    <script>
+        /*
+        como os comandos prompt recebem strings, para manipular tipos com number
+        devemos fazer as convercoes usando o parseInt ou parseFloat
+        */
+        var n1 = Number(window.prompt("Digite um numero"))
+        var n2 = Number(window.prompt("Digite um outo numero"))
+        var s = n1 + n2
+        window.alert(`a soma entre ${n1} e ${n2} e ${s}`)
+        var sn = 'javascript'
+        window.alert(sn.length)
+    </script>
+</body>
+</html>

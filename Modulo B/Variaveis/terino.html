@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Treino</title>
+</head>
+<body>
+    
+    <script>
+        var valor = Number(prompt("digite um numero"))
+        var num = Number(prompt('digite outro numero'))
+        document.writeln(`O primeiro numero digitado e ${valor} e o segundo e ${num}`)
+        var soma = valor + num
+        document.writeln(`a soma entre ${valor} + ${num} = ${soma}`)
+
+        var texto ='vicente'
+        document.writeln(`em letras maiusculas o nome ${texto} escreve-se assim ${texto.toUpperCase()}`)
+        document.writeln(`o valor monetario da soma e ${soma.toLocaleString('pt-BR', {style:'currency', currency:'EUR'})}`)
+    </script>
+</body>
+</html>

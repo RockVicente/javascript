@@ -1,2 +1,7 @@
-console.log('ola mundo')
-console.log('o console funciona bem')
+var pais = 'Br'
+console.log(`Vivendo em ${pais}`)
+if(pais != 'Mz'){
+    console.log('Voce e estrangeiro')
+}else{
+    console.log('mocambicano')
+}

@@ -55,7 +55,7 @@
         }
 
         .container-secundario .circulo-imagem{
-            background: aqua;
+            background: aqua url(Maputo\ city\ 🏙.jpeg) center center fixed no-repeat;
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -71,14 +71,24 @@
     <div class="container-principal">
         <h1>Hora do Dia</h1>
         <div class="container-secundario">
-            <p>agora sao</p>
+            <p class="msg">agora sao</p>
             <div class="circulo-imagem">
 
             </div>
         </div>
         <a href="https://www.instagram.com/rock_vicente03/?__pwa=1#">
-            Meu Instagram
+            @Meu Instagram
         </a>
     </div>
+
+    <script>
+        var horaSistema = new Date()
+        var hora = horaSistema.getHours()
+        var msg = document.getElementsByClassName('msg')
+        
+        if(hora < 12){
+            msg = ''
+        }
+    </script>
 </body>
 </html>

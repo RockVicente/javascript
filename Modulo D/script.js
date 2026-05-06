@@ -8,13 +8,13 @@ function carregar(){
     var body = document.querySelector('body')
     var img = document.getElementById('foto')
     if(horaAgora >= 0 && horaAgora < 12){
-        body.style.background = '#5896e1'
+        body.style.background = '#7DD3FF'
         img.src ='manha.png'
     }else if(horaAgora >= 12 && horaAgora < 18){
-        body.style.background = '#48596e'
+        body.style.background = '#A2574B'
         img.src ='tarde.png'
     }else{
-        body.style.background = '#2d4e45'
+        body.style.background = '#485659'
         img.src ='noite.png'
     }
 }

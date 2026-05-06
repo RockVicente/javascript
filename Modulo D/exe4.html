@@ -84,10 +84,14 @@
     <script>
         var horaSistema = new Date()
         var hora = horaSistema.getHours()
-        var msg = document.getElementsByClassName('msg')
-        
+        var msg = document.querySelector('p.msg')
+        var image = document.querySelector('div.circulo-imagem')
         if(hora < 12){
-            msg = ''
+            msg.innerText = `Bom dia, agora sao ${hora} horas`
+        }else if(hora < 18 && hora > 12){
+            msg.innerText = `Boa tarde, agora sao ${hora} horas`
+        }else{
+            msg.innerText = `Boa noite, agora sao ${hora} horas`
         }
     </script>
 </body>

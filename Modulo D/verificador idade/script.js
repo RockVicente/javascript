@@ -11,6 +11,7 @@ function verificar(){
         var genero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
+        img.className = 'circular-img'
         if(sexo[0].checked){
             genero = 'Masculino'
             if(idade >= 0 && idade < 10){
@@ -41,8 +42,10 @@ function verificar(){
                 //idoso
                 img.setAttribute('src', 'idosa.png')
             }
-        }   
+        }  
+
         res.style.textAlign = 'center'
         res.innerHTML = `Idade ${idade}, genero ${genero}`
+        res.appendChild(img)
     }
 }

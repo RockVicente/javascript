@@ -4,67 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador Idade</title>
-    <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-        }
-
-        body{
-            background-color: lightskyblue;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        header{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-
-        section{
-            display: grid;
-            justify-content: center;
-            gap: 20px;
-            background-color: lightgray;
-        }
-
-        div.conteudo{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: center;
-            background-color: white;
-            width: 400px;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        div.input{
-            gap: 10px;
-        }
-
-        div.btn input{
-            padding: 8px;
-            border-radius: 5px;
-        }
-
-        footer{
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
-
-        p{
-            color: white;
-        }
-
-        footer a{
-            text-decoration: none;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -72,30 +13,40 @@
     </header>
 
     <section>
-        <div class="conteudo">
-            <div class="input">
+
+        <div class="principal">
+            
+            <div class="anoNasc">
+                <label for="aNasc">Ano de Nascimento</label>
+                <input type="number" name="ano" id="aNasc">
+            </div>
+            
+            <div>
+            
+                <p>Sexo:
+                    <input type="radio" name="sex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+            
                 <div>
-                    <label for="byear">Ano de nascimento</label>
-                    <input type="number" name="year" id="byear">
-                </div>
-                <div>
-                    <label for="isexo">Sexo</label>
-                    <input type="radio" name="radsex" id="mas">
-                    <label for="mas">Masculino</label>
-                    <input type="radio" name="radsex" id="fem">
-                    <label for="fem">Femenino</label>
+                    <input class="btn" type="submit" value="Verificar" onclick="verificar()">
                 </div>
             </div>
-            <div class="btn">
-                <input type="button" value="verificar">
+            
+            <div id="res">
+                aqui vai aparecer o resultado!
             </div>
-            <div class="res">
-                Coloca os dados e veras o resultado
-            </div>
+        
         </div>
+    
     </section>
+    
     <footer>
         <p>&COPY; <a href="https://www.instagram.com/rock_vicente03/?__pwa=1#">Rock Vicente</a></p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>

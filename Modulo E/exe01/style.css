@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:rgba(15, 149, 232, 0.688);
+}
+
+section{
+    background-color: brown;
+    padding: 20px auto;
+}
+
+div.titulo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+div.conteudo{
+    width: 400px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
